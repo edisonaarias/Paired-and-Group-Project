@@ -1,25 +1,22 @@
 
-from inspect import getsourcelines
-
-
 class Player:
-    def __init__(self):
-        pass
-    def gestures(self, rock, paper, scissors, lizard, spock):
-        self.rock = rock > lizard and rock >scissors
-        self.paper = paper > rock and paper > spock
-        self.scissors = scissors > lizard and scissors > paper
-        self.lizard = lizard > spock and lizard > paper
-        self.spock = spock > rock and spock > scissors
+    def __init__(self, name, players):
+        self.name = name 
+        self.players = players                                                      # need to make sure that self.players can be used to ask user, how many are playing.
         
+    # we believe hand will have rock,paper scissors,lizard, and spock as parameters.
 
-    # def count_down(self):
-    #     self.dual = "winner is best two out of three!"
+    def hand(self): 
+        self.rock -= self.attack_power()
+        self.rock = "rock"
+        self.paper = "paper"
+        self.scissors = "scissors"    
+        self.lizard = "lizard" 
+        self.spock = "spock"
 
-    # def selection(self):
+    def count_down(self):
+        self.dual = "winner is best two out of three!"
 
-    # # def gesture selected(self):
+    def selection(self):
 
-    # 2 methods needed 
-    # - gestures 
-    # - method to allow user to choose gesture 
+    # def gesture selected(self):
