@@ -3,26 +3,27 @@ from ai import AI
 
 class Game:
     def __init__(self):
-<<<<<<< HEAD
         # self.player = Player("rock")
-=======
-        self.player = Human("rock")
->>>>>>> 22a09aa21047493ea902df519368106d8d213199
         self.ai = AI("paper")
 
     def run_game(self):
+        self.display_welcome()
+        self.rules()
+        # self.round_phase()
 
     def display_welcome(self):
+        print("Welcome to Rock, Paper, Scissors, Lizard, Spock")
 
-<<<<<<< HEAD
+    def rules(self):
+        print("Each match will be best of three games!\nUse the number keys to enter your selection.")
+
     def round_phase(self):
-        while 
-            print("Next round! First player to win twice is the winner.")
+        pass
+        # while 
+        #     print("Next round! First player to win twice is the winner.")
 
     def display_winner(self):
-        print("Player {} has won!")
-=======
-    def rounds(self):
+        print("Player has won!")
 
-    def display_winner(self):
->>>>>>> 22a09aa21047493ea902df519368106d8d213199
+my_game = Game() 
+my_game.run_game()

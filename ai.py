@@ -1,11 +1,14 @@
 import random 
+from player import Player
 
+class AI(Player):
+    def __init__(self):
+        self.name = "Robot"
+        super().__init__()
 
-class AI:
-    def __init__(self, name):
-        self.name = name
+    def choose_gesture(self):
+        self.random_gesture = random.choice[self.gesture]
 
-    def random_selection(self, AI):
-        pass
+    def 
 
     #TODO: override the choose_gesture method
