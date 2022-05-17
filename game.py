@@ -7,9 +7,11 @@ class Game:
         self.ai = AI("paper")
 
     def run_game(self):
-
+        pass
     def display_welcome(self):
+        pass
 
     def rounds(self):
-
+        pass
     def display_winner(self):
+        pass

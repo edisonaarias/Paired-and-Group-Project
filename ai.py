@@ -6,4 +6,6 @@ class AI:
         self.name = name
 
     def random_selection(self, AI):
-        AI.selection -= self:
+        pass
+
+    #TODO: override the choose_gesture method
