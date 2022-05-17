@@ -1,4 +1,4 @@
-import random 
+from unicodedata import name
 
 
 class AI:
@@ -6,4 +6,4 @@ class AI:
         self.name = name
 
     def random_selection(self, AI):
-        ai.selection -= self.
+        AI.selection -= self:
