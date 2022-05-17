@@ -1,4 +1,9 @@
-class AI:
-    def __init__(self):
+from unicodedata import name
 
-    def random_selection(self):
+
+class AI:
+    def __init__(self, name):
+        self.name = name
+
+    def random_selection(self, AI):
+        ai.selection -= self.
