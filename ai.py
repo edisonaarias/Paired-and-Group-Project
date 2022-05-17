@@ -1,4 +1,4 @@
-from unicodedata import name
+import random 
 
 
 class AI:

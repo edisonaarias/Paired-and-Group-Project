@@ -9,7 +9,12 @@ class Game:
     def run_game(self):
 
     def display_welcome(self):
+        print("Welcome to Rock, Paper, Scissors, Lizzard, Spock")
+    
+    def display_rules(self):
+        print("Winner will be the best two of 3 matches\nUse the number keys to enter your selection.")
 
-    def rounds(self):
+    def round_phase(self):
+        while self.human.hand 
 
     def display_winner(self):
