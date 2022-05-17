@@ -3,7 +3,7 @@ from ai import AI
 
 class Game:
     def __init__(self):
-        self.player = Player("rock")
+        # self.player = Player("rock")
         self.ai = AI("paper")
 
     def run_game(self):
@@ -15,8 +15,8 @@ class Game:
         print("Winner will be the best two of 3 matches\nUse the number keys to enter your selection.")
 
     def round_phase(self):
-        pass
-        # while self.human.hand 
+        while 
+            print("Next round! First player to win twice is the winner.")
 
     def display_winner(self):
-        pass
+        print("Player {} has won!")

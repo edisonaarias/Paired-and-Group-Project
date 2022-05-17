@@ -1,8 +1,10 @@
-import player from Player
+from player import Player
 
 class Human:
     def __init__(self):
-        self.human = Player()
+        pass
 
 
-    def hand(self):
+    #TODO: override the choose_gesture method
+    def hand(self, ai, human):
+        self.
