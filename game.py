@@ -7,7 +7,7 @@ class Game:
         self.ai = AI("paper")
 
     def run_game(self):
-
+        pass
     def display_welcome(self):
         print("Welcome to Rock, Paper, Scissors, Lizzard, Spock")
     
@@ -15,6 +15,8 @@ class Game:
         print("Winner will be the best two of 3 matches\nUse the number keys to enter your selection.")
 
     def round_phase(self):
-        while self.human.hand 
+        pass
+        # while self.human.hand 
 
     def display_winner(self):
+        pass

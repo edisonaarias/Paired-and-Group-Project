@@ -4,8 +4,7 @@ from inspect import getsourcelines
 
 class Player:
     def __init__(self):
-        
-
+        pass
     def gestures(self, rock, paper, scissors, lizard, spock):
         self.rock = rock > lizard and rock >scissors
         self.paper = paper > rock and paper > spock
