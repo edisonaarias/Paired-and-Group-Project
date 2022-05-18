@@ -17,9 +17,6 @@ class Human:
         self_input = ""
         # self.surprise = user_input("How many players? 1,2,3")
 
-    a = [0, 1, 2, 3, 4]
-    for x in range(len(a)):
-        print a[x],
 
 # welcome display, 
 # rules displayed along with how to make selections,
