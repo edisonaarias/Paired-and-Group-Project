@@ -1,29 +1,26 @@
-from inspect import getsource
-from site import getuserbase
 from player import Player
 
-class Human:
+class Human(Player):
     def __init__(self):
-        self.player_name = ""
+        self.player_name = Human("")
+        super().__init__()
 
+    #TODO: override the choose_gesture method
     def choose_gesture(self):
-        self.choose_rock = 0
-        self.choose_paper = 1
-        self.choose_scissors = 2
-        self.choose_lizard = 3 
-        self.choose_spock = 4
-
-    def player_count():
-        self_input = ""
-        # self.surprise = user_input("How many players? 1,2,3")
+        print(self.gesture)
+        self.user_input = input("Choose 0 for Rock, Choose 1 for Paper, Choose 2 for Scissors, Choose 3 for Lizard, Choose 4 for Spock")
+        self.gesture = self.user_input 
+        print(f"Player 1 chose {self.user_input}")
 
 
-# welcome display, 
-# rules displayed along with how to make selections,
-#  print out the meaning of the gestures, 
-# prompt the user to select how many players, 
-# prompt the user to then make an entry to select his gesture,
-# print out which player chose which gesture as well as who won the roudn 
-# print out that the game is moving to the next round
-#  prompt the user to then make an entry to select his gesture 
-# print out whic player chose which gesture as well as who won the round
+        # 1. I want to display the list of gesture options to my user in the console
+        # 2. Prompt my user for input to find out which gesture they want
+        # 3. I want to take that input, match it to the gesture they want
+        # 4. I want to find a way to store that chosen gesture
+
+my_human = Human()
+my_human.choose_gesture()
+
+
+
+
