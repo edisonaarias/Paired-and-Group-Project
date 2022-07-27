@@ -2,13 +2,13 @@ from player import Player
 
 class Human(Player):
     def __init__(self):
-        self.player_name = Human("")
+        self.player_name = "Player One"
         super().__init__()
 
     #TODO: override the choose_gesture method
     def choose_gesture(self):
         print(self.gesture)
-        self.user_input = input("Choose 0 for Rock, Choose 1 for Paper, Choose 2 for Scissors, Choose 3 for Lizard, Choose 4 for Spock")
+        self.user_input = input("Choose 0 for Rock, 1 for Paper, 2 for Scissors, 3 for Lizard, or 4 for Spock\n")
         self.gesture = self.user_input 
         print(f"Player 1 chose {self.user_input}")
 
@@ -18,8 +18,8 @@ class Human(Player):
         # 3. I want to take that input, match it to the gesture they want
         # 4. I want to find a way to store that chosen gesture
 
-my_human = Human()
-my_human.choose_gesture()
+# my_human = Human()
+# my_human.choose_gesture()
 
 
 
