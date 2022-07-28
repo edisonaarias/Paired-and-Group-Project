@@ -7,14 +7,16 @@ class Game:
         self.ai = AI()
 
     def run_game(self):
-        print("Hello World. Welcome to RPSLS")
-        self.player.choose_gesture()
+        self.display_welcome()
+        self.rounds()
 
     def display_welcome(self):
-        pass
+        print("Welcome to RPSLS!")
+        print("Rules are as follows: Rock crushes Scissors, Scissors cuts Paper, Paper covers Rock,\nRock crushes Lizard, Lizard poisons Spock, Spock smashes Scissors,\nScissors decapitates Lizard, and Lizard eats Paper")
+
 
     def rounds(self):
-        pass
+        self.player.choose_gesture()
 
     def display_winner(self):
         pass

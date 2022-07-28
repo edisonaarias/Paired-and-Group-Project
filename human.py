@@ -2,7 +2,7 @@ from player import Player
 
 class Human(Player):
     def __init__(self):
-        self.player_name = "Player One"
+        self.player_name = input()
         super().__init__()
 
     #TODO: override the choose_gesture method
@@ -10,7 +10,7 @@ class Human(Player):
         print(self.gesture)
         self.user_input = input("Choose 0 for Rock, 1 for Paper, 2 for Scissors, 3 for Lizard, or 4 for Spock\n")
         self.gesture = self.user_input 
-        print(f"Player 1 chose {self.user_input}")
+        print(f"{self.player_name} {self.user_input}")
 
 
         # 1. I want to display the list of gesture options to my user in the console
