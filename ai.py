@@ -1,9 +1,11 @@
+from unicodedata import name
 from player import Player
 import random
 
 class AI(Player):
-    def __init__(self):
+    def __init__(self, name):
         super().__init__()
+        self.name = name
 
     def choose_gesture(self):
         self.random_gesture = random.choice(self.gesture)
@@ -13,6 +15,4 @@ class AI(Player):
 
     def random_selection(self):
         pass
-
-    #TODO: override the choose_gesture method
 

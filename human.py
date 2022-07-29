@@ -1,12 +1,13 @@
 from player import Player
 
 class Human(Player):
-    def __init__(self):
+    def __init__(self, name):
         super().__init__()
+        self.name = name
 
     def choose_gesture(self):
         while True: 
-            self.user_input = input("Enter 0 for Rock, 1 for Paper, 2 for Scissors, 3 for Lizard, or 4 for Spock\n")
+            self.user_input = input("Enter 0 for Rock\n1 for Paper\n2 for Scissors\n3 for Lizard\n4 for Spock\n\n")
             if self.user_input in ["0","1", "2", "3", "4"]:
                 break
             else:
